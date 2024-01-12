@@ -1,0 +1,126 @@
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #00000052;
+    border-radius: 5px;
+}
+
+.message{
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.messages-list{
+    height:100%;
+    width: 250px;
+    color:white;
+    padding:20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.coordinates{
+    position: absolute;
+    left: 0;
+    top:0;
+    font-size: 11px;
+}
+
+
+
+.hints{
+    color:white;
+    flex: 1 1 auto;
+    overflow-y: auto;
+}
+
+.separator{
+    background-color:white;
+    width: 200px;
+    height: 2px;
+    margin:15px;
+}
+
+#reset{
+    width: 200px;
+    height: 50px;
+    color:white;
+    font-weight: 700;
+    font-size: 24px;
+    background-color: red;
+    border: none;
+}
+
+h1{
+    color:white;
+}
+
+h3{
+    margin:0;
+}
+
+.lives-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 24px;
+}
+
+.heart-icon{
+    height: 24px;
+    width: 24px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 64px 64px 64px 64px 64px 64px 64px 64px;
+    padding: 10px;
+  }
+  
+  .grid-item {
+    background-color: rgb(100, 100, 100);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .icon{
+    width: 36px;
+    height: 36px;
+  }
+
+  .discovered{
+    background-color: white;
+  }
+
+  .selected{
+    background-color: greenyellow;
+}
+
+
+#myVideo {
+    position: fixed;
+    left: -20px;
+    top: -20px;
+    min-width: 110%; 
+    min-height: 110%;
+    z-index: -1;
+    filter:blur(10px);
+  }

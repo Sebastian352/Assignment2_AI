@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.socket.io/4.1.2/socket.io.min.js"
+        integrity="sha384-toS6mmwu70G0fw54EGlWWeA4z3dyJ+dlXBtSURSKN4vyRFOcxd3Bzjj/AoOwY+Rg"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/client.js"></script>
+    <title>Mine Field</title>
+</head>
+
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="../img/liquid-gradient.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <h1>Mine Field</h1>
+
+    <div class="container">
+        <div class="grid-container">
+
+        </div>
+        <div class="messages-list">
+            <button id="reset" class="hidden">Play Again</button>
+            <div class="message">
+               
+            </div>
+            <div class="separator"></div>
+            <h3>Lives:</h3>
+
+            <div class="lives-container"></div>
+            <div class="separator"></div>
+            <h3>Hints:</h3>
+            <div class="hints">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

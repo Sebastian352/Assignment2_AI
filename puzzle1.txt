@@ -1,0 +1,132 @@
+module.exports = Object.freeze([
+  {
+    coordinates: {
+      x: 1,
+      y: 1,
+    },
+    type: "HINT",
+    value: "all x ( mine(1,x) -> mine(x,1) )",
+    hint: "all x ( mine(1,x) -> mine(x,1) )",
+  },
+  {
+    coordinates: {
+      x: 1,
+      y: 5,
+    },
+    type: "HINT",
+    value: "mine(2,4)",
+    hint: "mine(2,4)",
+  },
+  {
+    coordinates: {
+      x: 1,
+      y: 8,
+    },
+    type: "HINT",
+    value: "all x -mine(x,8)",
+    hint: "all x -mine(x,8)",
+  },
+  {
+    coordinates: {
+      x: 2,
+      y: 6,
+    },
+    type: "HINT",
+    value: "mine(5,7) | mine(7,5)",
+    hint: "mine(5,7) | mine(7,5)",
+  },
+  {
+    coordinates: {
+      x: 3,
+      y: 3,
+    },
+    type: "HINT",
+    value: "mine(1,6) | mine(6,1)",
+    hint: "mine(1,6) | mine(6,1)",
+  },
+  {
+    coordinates: {
+      x: 3,
+      y: 8,
+    },
+    type: "HINT",
+    value: "all x ( mine(x,2) -> mine(2,x) )",
+    hint: "all x ( mine(x,2) -> mine(2,x) )",
+  },
+  {
+    coordinates: {
+      x: 5,
+      y: 4,
+    },
+    type: "HINT",
+    value: "all y ( mine(1,y) -> mine(3,y) )",
+    hint: "all x ( mine(1,y) -> mine(3,y) )",
+  },
+  {
+    coordinates: {
+      x: 6,
+      y: 5,
+    },
+    type: "HINT",
+    value: "exists y mine(6,y) -> mine(8,6)",
+    hint: "exists y mine(6,y) -> mine(8,6)",
+  },
+  {
+    coordinates: {
+      x: 7,
+      y: 3,
+    },
+    type: "HINT",
+    value: "all x all y all z ( mine(x,y) & !(y = z) -> -mine(x,z))",
+    hint: "all x all y all z ( mine(x,y) & !(y = z) -> -mine(x,z))",
+  },
+  {
+    coordinates: {
+      x: 7,
+      y: 8,
+    },
+    type: "HINT",
+    value: "all y -mine(7,y)",
+    hint: "all y -mine(7,y)",
+  },
+  {
+    coordinates: {
+      x: 2,
+      y: 4,
+    },
+    type: "MINE",
+    value: "asd",
+  },
+  {
+    coordinates: {
+      x: 4,
+      y: 2,
+    },
+    type: "MINE",
+    value: "asd",
+  },
+  {
+    coordinates: {
+      x: 5,
+      y: 7,
+    },
+    type: "MINE",
+    value: "asd",
+  },
+  {
+    coordinates: {
+      x: 6,
+      y: 1,
+    },
+    type: "MINE",
+    value: "asd",
+  },
+{
+    coordinates: {
+      x: 8,
+      y: 6,
+    },
+    type: "MINE",
+    value: "asd",
+  },
+]);
